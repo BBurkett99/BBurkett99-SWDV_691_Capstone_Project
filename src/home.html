@@ -1,51 +1,91 @@
 <!DOCTYPE html>
+<!--Brad Burkett
 
-<!--Home page HTML-->
+Home Page
+
+SWDV 691: Capstone Project
+-->
 
 <html>
-    <head>
-      <link href="style.css" rel="stylesheet"/> 
-      <a href="home.html">Home</a>
-      <a href="Blood Pressure Inputs.html">Blood Presure</a>
-      <a href="Glucose Inputs.html">Glucose</a>
-      <a href="Weight Inputs.html">Weight</a> 
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name='keywords' content='Health, blood pressure, weight, BMI, glucose, blood sugar'>
-        <meta name="author" content="">
-        <title>Health Tracker</title>
-        <link href="style.css" rel="stylesheet"/>    
+<head>
+  <link href="style.css" rel="stylesheet" />
+  <a href="home.html">Home</a>
+  <a href="BloodPressureInputs.html">Blood Presure</a>
+  <a href="GlucoseInputs.html">Glucose</a>
+  <a href="WeightInputs.html">Weight</a>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name='keywords' content='Health, blood pressure, weight, BMI, glucose, blood sugar'>
+  <meta name="author" content="">
+  <title>Health Tracker</title>
+
 </head>
+
 <body>
 
 
-    <center><h1>Health Tracker</h1></center>
-    <center><h2>Home Page</h2></center>
+  <center>
+    <h1>Health Tracker</h1>
+  </center>
+  <center>
+    <h2>Home Page</h2>
+  </center>
 
 
-    <div class = "infoClass">
-        <h3 align="center">
+  <div class="infoClass">
+    <h3 align="center">
 
-            <p>The Health Tracker is a simple way to keep track of your Blood Pressure readings </p>
-            <p>Glucose numbers and your Body Mass Index </p><br>
-            <p><u>Please click on one of the links below to start</u></p><br><br><br>
+      <p>The Health Tracker is a simple way to keep track of your Blood Pressure readings </p>
+      <p>Glucose numbers and your Body Mass Index </p><br>
+      <p><u>Please click on one of the links below to start</u></p><br><br><br>
 
-          <div class="buttons">
-            <input type="button" class="button_css" value="Blood Preasure Inputs">
-            <input type="button" class="button_css" value="Glucose Inputs">
-            <input type="button" class="button_css" value="Weight Inputs">
-          </div>
-          <br><br>
-          <div class="buttons">
-            <input type="button" class="button_css" value="Blood Preasure Readings">
-            <input type="button" class="button_css" value="Glucose Readings">
-            <input type="button" class="button_css" value="Weight-BMI Readings">
-          </div>
-          
+      <div class="buttons">
+        <input type="button" class="button_css" value="Blood Preasure Inputs" onClick="myFunction()">
+        <script>
+          function myFunction() {
+            window.location.href = "https://trackingyourhealth.azurewebsites.net/BloodPreasureInputs.html";
+          }
+        </script>
+        <input type="button" class="button_css" value="Glucose Inputs" onClick="myFunction()">
+        <script>
+          function myFunction() {
+            window.location.href = "https://trackingyourhealth.azurewebsites.net/GlucoseInputs.html";
+          }
+        </script>
+        <input type="button" class="button_css" value="Weight Inputs" onClick="myFunction()">
+        <script>
+          function myFunction() {
+            window.location.href = "https://trackingyourhealth.azurewebsites.net/WeightInputs.html";
+          }
+        </script>
+      </div>
+      <br><br>
+      <div class="buttons">
+        <input type="button" class="button_css" value="Blood Preasure Readings" onClick="myFunction()">
+        <script>
+          function myFunction() {
+            window.location.href = "https://trackingyourhealth.azurewebsites.net/BloodPreasureMonthly.html";
+          }
+        </script>
+        <input type="button" class="button_css" value="Glucose Readings" onClick="myFunction()">
+        <script>
+          function myFunction() {
+            window.location.href = "https://trackingyourhealth.azurewebsites.net/GlucoseMonthly.html";
+          }
+        </script>
+        <input type="button" class="button_css" value="Weight-BMI Readings" onClick="myFunction()">
+        <script>
+          function myFunction() {
+            window.location.href = "https://trackingyourhealth.azurewebsites.net/WeightMonthly.html";
+          }
+        </script>
+      </div>
 
-          
-          </div>
+
+  </div>
 
 </body>
+
 </html>
