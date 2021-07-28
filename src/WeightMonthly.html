@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<!--Brad Burkett
+
+Weight/B.M.I. Averages
+
+SWDV 691: Capstone Project
+--> 
+<head>
+	<link href="style.css" rel="stylesheet" />
+	<a href="home.html">Home</a>
+	<a href="Blood Pressure Inputs.html">Blood Presure</a>
+	<a href="Glucose Inputs.html">Glucose</a>
+	<a href="Weight Inputs.html">Weight</a>
+	<meta charset="utf-8">
+
+	<title>Health Tracker</title>
+</head>
+<!--Bar chart code-->
+<script>
+	window.onload = function () {
+
+		var chart = new CanvasJS.Chart("chartContainer", {
+			animationEnabled: true,
+
+			title: {
+				text: "Health Tracker"
+			},
+			axisX: {
+				interval: 1
+			},
+			axisY2: {
+				interlacedColor: "rgba(1,77,10,.2)",
+				gridColor: "rgba(0,0,255,1)",
+				title: "Average Weight/B.M.I. Monthly readings"
+			},
+			data: [{
+				type: "bar",
+				name: "weight",
+				axisYType: "secondary",
+				color: "#800080",
+				dataPoints: [
+/*This is sample data for the chart page until the database is connected*/
+					{ y: 200, label: "Dec" },
+					{ y: 210, label: "Nov" },
+					{ y: 210, label: "Oct" },
+					{ y: 215, label: "sept" },
+					{ y: 220, label: "Aug" },
+					{ y: 220, label: "Jul" },
+					{ y: 214, label: "Jun" },
+					{ y: 210, label: "May" },
+					{ y: 208, label: "Apr" },
+					{ y: 198, label: "Mar" },
+					{ y: 195, label: "Feb" },
+					{ y: 205, label: "Jan" }
+				]
+			}]
+		});
+		chart.render();
+
+	}
+</script>
+</head>
+
+<body>
+	<div id="chartContainer" style="height: 650px; width: 100%;"></div>
+	<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+
+</html>
