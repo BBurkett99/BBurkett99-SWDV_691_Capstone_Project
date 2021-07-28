@@ -1,10 +1,15 @@
-/*Login page until the database is up and running*/
+/*Brad Burkett
+
+Login Page
+
+SWDV 691: Capstone Project
+*/
 
 
 const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");
-
+/*This is sample until the database is connected*/
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
     const username = loginForm.username.value;
